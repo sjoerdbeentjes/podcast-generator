@@ -135,7 +135,7 @@ export default function Index() {
   }, [data]);
 
   return (
-    <div className="flex flex-col h-screen justify-center">
+    <div className="flex flex-col h-screen justify-center p-6">
       <Card className="w-full max-w-lg m-auto">
         <header className="p-6">
           <h1 className="text-2xl font-semibold leading-none tracking-tight">
