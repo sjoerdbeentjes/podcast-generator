@@ -125,11 +125,10 @@ export default function Index() {
 
         if (run.data.status === "completed") {
           clearInterval(interval);
+
+          await getArtifect(data.id);
+
           setLoading(false);
-
-          console.log("Run completed!");
-
-          getArtifect(data.id);
         }
       }, 1000);
     }
