@@ -111,6 +111,10 @@ export default function Index() {
     }
   }
 
+  function handleSubmit() {
+    setDownloadUrl(null);
+  }
+
   useEffect(() => {
     if (data) {
       console.log("Run created!", data);
@@ -148,6 +152,7 @@ export default function Index() {
           action={action}
           method="POST"
           className="p-6 pt-0 grid w-full items-center gap-4"
+          onSubmit={handleSubmit}
         >
           <div className="flex flex-col gap-2">
             <label
