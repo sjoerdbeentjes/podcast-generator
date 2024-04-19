@@ -1,4 +1,4 @@
-import { LoaderFunctionArgs, json } from "@remix-run/node";
+import { LoaderFunctionArgs, json } from "@remix-run/deno";
 import { Octokit } from "octokit";
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
